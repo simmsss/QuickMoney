@@ -1,0 +1,4 @@
+wordnet
+cmudict
+stopwords
+vader_lexicon
