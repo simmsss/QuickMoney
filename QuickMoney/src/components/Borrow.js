@@ -201,7 +201,142 @@ class Borrow extends Component {
   render() {
     return (
       <div styles={{ backgroundImage:`url(${bg})`}}>
-        
+        { this.state.loading
+          ? 
+          <div className="center mt-19">
+          <div className={styles.verifyTitle}>QuickMoney</div>
+              <FingerprintSpinner
+                style={{width: "100%"}}
+                color='#251F82'
+                size='200'
+	            />
+                <div style={{paddingTop: 10, textAlign: "center", fontSize: 12, fontWeight: 600, color: "black"}}>This may take a minute...</div>
+                <Footer />
+            </div>
+          : 
+          <div className={styles.grad}>
+            <div class="row">
+
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4" >
+                <div style={style.content}>
+                <a href="/" className={styles.verifyTitle}>QuickMoney</a>
+                  <p></p>
+                  <hr></hr>
+                  <div style={{padding: 16, fontSize: 12, fontWeight: 600, color: "black"}}>Logged in as: {this.state.account}</div>
+
+                  <div style={{height: 80, margin: 10, marginBottom: 16, backgroundImage: "url(" + walletBg + ")",
+                  backgroundPosition: 'center', backgroundSize: "contain",
+                    backgroundRepeat: 'no-repeat', resizeMode: 'contain'}} className={styles.buttonBox}>
+                    <div style={{paddingLeft: 110, paddingTop: 28}}
+                    className={styles.boxText}>
+                    BAL: ETH {window.web3.utils.fromWei(this.state.balance)}
+                    </div>
+                  </div>
+
+
+                  <div style={{height: 80, margin: 10, marginBottom: 16, backgroundImage: "url(" + interestBg + ")",
+                  backgroundPosition: 'center', backgroundSize: "contain",
+                    backgroundRepeat: 'no-repeat', resizeMode: 'contain'}} className={styles.buttonBox}>
+                    <div style={{paddingLeft: 110, paddingTop: 28}}
+                    className={styles.boxText}>
+                    EMI: ETH {this.state.emi}
+                    </div>
+                  </div>
+
+                  <div style={{height: 10, margin: 18}}></div>
+
+                  <div className={styles.verifyMid} style={{marginBottom: 8}}>Quick Actions</div>
+
+                  <div class="row" style={{marginLeft: 42}}>
+                    <a href="/borrow" class="btn btn-outline-success col-3" style={{height: 90, width: 40, backgroundImage: "url(" + borrow + ")", backgroundPosition: 'center', backgroundSize: "contain",
+                    backgroundRepeat: 'no-repeat', resizeMode: 'contain', margin: 6, marginBottom: 6,
+                    borderRadius: 10, boxShadow: "0px 0px 5px #D2D3D8"}}>
+                    </a>
+                    <a href="/lend" class="btn btn-light col-3" style={{height: 90, width: 40, backgroundImage: "url(" + lend + ")", backgroundPosition: 'center', backgroundSize: "contain",
+                    backgroundRepeat: 'no-repeat', resizeMode: 'contain', margin: 6,
+                    borderRadius: 10, boxShadow: "0px 0px 5px #D2D3D8"}}>
+                    </a>
+                    <a href="/requests" class="btn btn-light col-3" style={{height: 90, width: 40, backgroundImage: "url(" + requests + ")", backgroundPosition: 'center', backgroundSize: "contain",
+                    backgroundRepeat: 'no-repeat', resizeMode: 'contain', margin: 6, marginBottom: 6,
+                    borderRadius: 10, boxShadow: "0px 0px 5px #D2D3D8"}}>
+                    </a>
+                  </div>
+
+                  <div class="row" style={{marginLeft: 42}}>
+                    <a href="/proposals" class="btn btn-light col-3" style={{height: 90, width: 40, backgroundImage: "url(" + proposals + ")", backgroundPosition: 'center', backgroundSize: "contain",
+                    backgroundRepeat: 'no-repeat', resizeMode: 'contain', margin: 6,
+                    borderRadius: 10, boxShadow: "0px 0px 5px #D2D3D8"}}>
+                    </a>
+                    <a href="/loans" class="btn btn-light col-3" style={{height: 90, width: 40, backgroundImage: "url(" + split + ")", backgroundPosition: 'center', backgroundSize: "contain",
+                    backgroundRepeat: 'no-repeat', resizeMode: 'contain', margin: 6,
+                    borderRadius: 10, boxShadow: "0px 0px 5px #D2D3D8"}}>
+                    </a>
+                    <a href="/about" class="btn btn-light col-3" style={{height: 90, width: 40, backgroundImage: "url(" + help + ")", backgroundPosition: 'center', backgroundSize: "contain",
+                    backgroundRepeat: 'no-repeat', resizeMode: 'contain', margin: 6,
+                    borderRadius: 10, boxShadow: "0px 0px 5px #D2D3D8"}}>
+                    </a>
+                  </div>
+
+                </div>
+                
+              </div>
+
+              <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+              <Navigation account={this.state.account}/>
+                <div style={{marginTop: 40, height: 600, backgroundImage: "url(" + bg + ")", backgroundPosition: 'center', backgroundSize: "contain",
+              backgroundRepeat: 'no-repeat', resizeMode: 'contain'}}>
+                  <div className={styles.verifyUpperMid}
+                  style={{paddingTop:80, paddingLeft: 40}}>Borrow</div>
+
+                  <p className={styles.desc}
+                  style={{paddingTop:20, paddingLeft: 40, paddingRight: 30}}>
+                    Create a loan request. Once created, your loan details and loan amount are reflected on the platform. All interested 
+                    buyers can view your request, look at your credit score and send their proposals. You can view all proposals in the Request 
+                    section of your profile and accept or reject proposals.
+                  </p>
+                    
+                    <div style={{margin: 40, marginRight: 220}}>
+                        <form onSubmit={(event) => {
+                            event.preventDefault()
+                            const content = this.loanDetail.value
+                            const value = this.loanValue.value
+                            this.createLoan(content, window.web3.utils.toWei(value.toString(), 'Ether'))
+                        }}>
+                            <div className="form-group">
+                            <input
+                                id="loanDetail"
+                                type="text"
+                                ref={(input) => { this.loanDetail = input }}
+                                className="form-control"
+                                placeholder="Brief details of the loan request"
+                                required />
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">ETH</span>
+                                </div>
+                                <input
+                                    id="loanValue"
+                                    type="text"
+                                    ref={(input) => { this.loanValue = input }}
+                                    className="form-control"
+                                    placeholder="Value of the required micro-loan"
+                                    required />
+                            </div>
+                            
+                            <button type="submit" className="btn btn btn-outline-primary">Create Loan Request</button>
+                        </form>
+                    </div>
+                    <Footer />
+                </div>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+        }
       </div>
     );
   }
