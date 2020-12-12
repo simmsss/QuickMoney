@@ -1,0 +1,24 @@
+### INSPIRATION 
+The Coronavirus Pandemic has not only created a health emergency but has forced economies to shut down across the globe. In India, Small and medium-sized Enterprises and Startups had already been struggling to stay afloat due to lack of financing, creating an inadequate/limited cash flow. Now with the lockdown being enforced from time to time, the situation has worsened, making it difficult for them to apply for bank loans. 
+After assessing the current scenario, we decided to develop a Peer-to-Peer lending web application, a blockchain-powered solution, facilitating quick, easy and secure loan transactions. 
+
+### STRUCTURE AND FUNCTIONALITY 
+With our aim to provide relief to economically stricken individuals and organizations, borrowers can send in a loan request with a total loan amount that they require and a short description regarding the same. Along with these details, a credit score of the borrower is attached to the request, which will help the lender in assessing their credibility. 
+Striking feature: Our credit scoring system doesn’t offer a binary decision for loans, keeping in line with the decentralized nature of the platform, we use industry-standard metrics like Weight of Evidence (WoE) and Information Value (IV), used by Financial Analysts, along with Machine learning models like Logistic Regression to provide a scorecard for each user.
+Lenders on QuickMoney can browse all loans and put forth their terms. The Decision on submitting a proposal is completely on the mercy of the lenders, and we don’t have any say on that matter. The credit score of the borrowers puts itself as a truly decentralized method to assess loan requests.
+
+### MARKET FIT
+Our platform- QuickMoney- creates a decentralized, automated and a time-efficient system. It reduces operational risks and caters to the needs of our target audience- SMEs, Startups and individuals who do not have a perfect loan application. 
+
+Why would a customer choose us? 
+We make loans accessible to organizations or individuals who might not have a perfect loan application for banks. Key points-
+
+1.	There is no need for collateral, making QuickMoney a lucrative option for small scale businesses or startups. 
+2.	No paperwork is required 
+
+Also, we use Ethers (ETH) as the default mode of payment on the platform by which users can complete cross-border payments seamlessly. This would allow us to target a global market.
+Why prefer QuickMoney over traditional banking?
+QuickMoney offers loans at a reduced risk with multiple lenders allowing flexible repayments at negotiable interest rates without any trust issue between different lenders. Elimination of middlemen would give the transaction independence to both the parties involves and would hasten the process too. 
+
+### FUTURE ROADMAP 
+In India, launching a peer-to-peer lending platform requires certain certifications from the government. With this in mind, we plan on getting our company registered under the Ministry of Corporate Affairs, India. This will help us in reaching a wider target audience. 
