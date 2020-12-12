@@ -243,9 +243,8 @@ class About extends Component {
 
                   <p className={styles.desc}
                   style={{paddingTop:20, paddingLeft: 40, paddingRight: 30}}>
-                    Browse all loan requests, observe borrower's credit scores and send in your proposed terms. The loan amount will be deducted from 
-                    your wallet but cannot be claimed by the loanee unless approved by both parties. You can claim a full refund anytime 
-                    until approval.
+                  With our aim to provide relief to economically stricken individuals and organizations, borrowers can send in a loan request with a total loan amount that they require and a short description regarding the same. Along with these details, a credit score of the borrower is attached to the request, which will help the lender in assessing their credibility.
+                    Lenders on QuickMoney can browse all loans and put forth their terms. The Decision on submitting a proposal is completely on the mercy of the lenders, and we don’t have any say on that matter. The credit score of the borrowers puts itself as a truly decentralized method to assess loan requests.
                   </p>
                     
                   <div className="content" style={{marginTop:4, paddingRight: 40, paddingLeft: 40}}>
