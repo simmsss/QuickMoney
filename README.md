@@ -9,6 +9,8 @@ Code snippets and supporting documentations for the **QuickMoney** project built
 
 For a detailed video explanation with voice-over, click [here](https://youtu.be/Wh3HHvWBvIM).
 
+![Overview](https://github.com/simmsss/QuickMoney/blob/main/Screenshots/1.png?raw=true)
+
 ### INSPIRATION 
 The Coronavirus Pandemic has not only created a health emergency but has forced economies to shut down across the globe. In India, Small and medium-sized Enterprises and Startups had already been struggling to stay afloat due to lack of financing, creating an inadequate/limited cash flow. Now with the lockdown being enforced from time to time, the situation has worsened, making it difficult for them to apply for bank loans. 
 After assessing the current scenario, we decided to develop a Peer-to-Peer lending web application, a blockchain-powered solution, facilitating quick, easy and secure loan transactions. 
@@ -27,6 +29,8 @@ Key features-
 2.	Smart-contract enabled loan process 
 3.	High transparency and Data Security
 4.	Quicker loan processing than the traditional method 
+
+![multiple lenders](https://github.com/simmsss/QuickMoney/blob/main/Screenshots/6.png?raw=true)
 
 ### TECHNICAL IMPLEMENTATION 
 QuickMoney is built on top of the Ethereum and Matic blockchains. Levering all the perks of the powerful ecosystem, our smart contracts are written in Solidity. During development, the Truffle CLI is used for compiling and migrating the contracts.
@@ -47,9 +51,13 @@ We make loans accessible to organizations or individuals who might not have a pe
 1.	There is no need for collateral, making QuickMoney a lucrative option for small scale businesses or startups. 
 2.	No paperwork is required 
 
+![Easy Application](https://github.com/simmsss/QuickMoney/blob/main/Screenshots/2.png?raw=true)
+
 Also, we use Ethers (ETH) as the default mode of payment on the platform by which users can complete cross-border payments seamlessly. This would allow us to target a global market.
 Why prefer QuickMoney over traditional banking?
 QuickMoney offers loans at a reduced risk with multiple lenders allowing flexible repayments at negotiable interest rates without any trust issue between different lenders. Elimination of middlemen would give the transaction independence to both the parties involves and would hasten the process too. 
+
+![Pay-off](https://github.com/simmsss/QuickMoney/blob/main/Screenshots/3.png?raw=true)
 
 ### FUTURE ROADMAP 
 In India, launching a peer-to-peer lending platform requires certain certifications from the government. With this in mind, we plan on getting our company registered under the Ministry of Corporate Affairs, India. This will help us in reaching a wider target audience. 
@@ -88,5 +96,7 @@ Note: If you decide to deploy using your personal account, ensure that there are
 * Blockchain Network: [Matic](https://matic.network/) and [Ethereum Ropsten Test Network](https://ethereum.org/en/developers/docs/networks/)
 * Front-end: [React](https://reactjs.org/)
 * Package Manager: [npm](https://www.npmjs.com/)
+
+![Portis](https://github.com/simmsss/QuickMoney/blob/main/Screenshots/5.png?raw=true)
 
 Made with ⚡ by [Simran](https://simmsss.github.io/) and [Utkarsh](https://skhiearth.github.io/)
