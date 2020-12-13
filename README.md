@@ -7,7 +7,7 @@ Code snippets and supporting documentations for the **QuickMoney** project built
 
 ### Video Walkthrough
 
-For a detailed video explanation with voice-over, click [here](https://youtu.be/Wh3HHvWBvIM).
+For a detailed video explanation with voice-over, click [here](https://youtu.be/v0QY5tMxNg8).
 
 ![Overview](https://github.com/simmsss/QuickMoney/blob/main/Screenshots/1.png?raw=true)
 
