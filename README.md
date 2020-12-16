@@ -1,7 +1,6 @@
 # QuickMoney
-by The Thunderbolts ⚡
 
-Code snippets and supporting documentations for the **QuickMoney** project built on Matic, Ethereum and Portis by *The Thunderbolts* for HackOff v3.0.
+Code snippets and supporting documentations for the **QuickMoney** project built on Matic, Ethereum and Portis 
 
 ## About QuickMoney
 
