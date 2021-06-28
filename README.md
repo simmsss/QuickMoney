@@ -41,26 +41,6 @@ The complete application is deployed publicly using automatic deploys from GitHu
  
 ![Technical Implementation](https://github.com/simmsss/QuickMoney/blob/main/Extra%20Assets/technical.jpg?raw=true)
 
-### MARKET FIT
-Our platform- QuickMoney- creates a decentralized, automated and a time-efficient system. It reduces operational risks and caters to the needs of our target audience- SMEs, Startups and individuals who do not have a perfect loan application. 
-
-Why would a customer choose us? 
-We make loans accessible to organizations or individuals who might not have a perfect loan application for banks. Key points-
-
-1.	There is no need for collateral, making QuickMoney a lucrative option for small scale businesses or startups. 
-2.	No paperwork is required 
-
-![Easy Application](https://github.com/simmsss/QuickMoney/blob/main/Screenshots/2.png?raw=true)
-
-Also, we use Ethers (ETH) as the default mode of payment on the platform by which users can complete cross-border payments seamlessly. This would allow us to target a global market.
-Why prefer QuickMoney over traditional banking?
-QuickMoney offers loans at a reduced risk with multiple lenders allowing flexible repayments at negotiable interest rates without any trust issue between different lenders. Elimination of middlemen would give the transaction independence to both the parties involves and would hasten the process too. 
-
-![Pay-off](https://github.com/simmsss/QuickMoney/blob/main/Screenshots/3.png?raw=true)
-
-### FUTURE ROADMAP 
-In India, launching a peer-to-peer lending platform requires certain certifications from the government. With this in mind, we plan on getting our company registered under the Ministry of Corporate Affairs, India. This will help us in reaching a wider target audience. 
-
 ## Requirements
 
 #### Hardware
